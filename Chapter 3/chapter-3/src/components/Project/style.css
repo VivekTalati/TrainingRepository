@@ -1,0 +1,140 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.note {
+    border: 1px solid #0b0a0a;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 1);
+    max-width: 500px;
+    min-width: 300px;
+    margin: 10px;
+    background: #b4a591;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+
+}
+.note:hover{
+    background: #dfd3c3;
+    box-shadow: 0px 15px 18px #55554b;
+
+}
+.gridding{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.note p {
+    max-height: 50px;
+    /* overflow: scroll; */
+    margin: 0;
+    /* text-overflow: ellipsis; */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    background: #55554b;
+    color: aliceblue;
+    padding: 0 53px;
+    margin: -10px;
+}
+.header h1{
+    font-size: 35px;
+}
+
+.container {
+    background: #dfd3c3;
+    height: 100%;
+    min-height: 99vh;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.search-bar {
+    font-size: 20px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+.note-editor {
+    display: flex;
+    flex-direction: column;
+    background: #dfd3c3;
+    margin-top: 15px;
+}
+
+.note-editor input {
+    font-size: 25px;
+    width: fit-content;
+    margin: 15px;
+    margin-bottom: 0;
+    border: 3px solid #090909;
+    background: #f4ede5;
+}
+
+.note-editor textarea {
+    background: #f4ede5;
+    height: 86px;
+    width: 460px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 15px;
+    margin-bottom: 0;
+    border: 3px solid #090909;
+}
+
+.note-editor button {
+    border: 3px solid #090909;
+    width: fit-content;
+    font-size: 25px;
+    margin: 15px;
+    padding: 10px;
+    margin-bottom: -5px;
+    background: #dfd3c3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+.note-editor button:hover {
+    background: #a39583;
+}
+
+.notes-list {
+    background: #dfd3c3;
+    font-size: 20px;
+    margin: 5px 15px;
+    /* width: 500px; */
+}
+.notes-list h3 {
+    margin: 0;
+    font-size: 25px;
+
+}
+
+.notes-list button {
+    border: 2px solid #090909;
+    width: fit-content;
+    font-size: 20px;
+    margin: 5px;
+    padding: 0 10px;
+    /* margin-bottom: -5px; */
+    background: #dfd3c3;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.notes-list button:hover {
+    background: #a39583;
+    color: white;
+}
